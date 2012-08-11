@@ -1,0 +1,486 @@
+@charset "windows-1251";
+/* CSS Document */
+
+body {
+	background-color:#000000;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-size:100%;
+	min-width:800px;
+	min-height:500px;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+div { 
+	outline: none;
+}
+
+#main_div {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 615px;
+   margin-left: -50%;
+   margin-top: -300px;
+}
+
+#logo {
+	float:left;
+	width:35%; 
+	height:70px;
+}
+
+#logo span {
+	position:relative;
+	left:60%;
+	top:15px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+}
+
+#logo a { 
+	color:#FFFFFF; 
+	text-decoration:none;
+}
+
+#lang {
+	float:left;
+	display:block;
+	width:18%; 
+	height:70px;
+	color:#808080;
+}
+
+#lang img {
+	float:left;
+	position:relative;
+	top:20px;
+	border:none;
+}
+
+#lang a {
+	text-decoration:none;
+	border:none;
+}
+
+.mmenu {
+	width:45%;
+	height:70px;
+	float:left;
+	min-width:450px;
+}
+
+.mmenu div {
+	float:left;
+	line-height:65px;
+	vertical-align:middle;
+	padding: 0 1em 0 1em;
+/*	font:normal;
+	font-family: Maiandra GD, Century, Georgia, Cambria, Tahoma;
+*/	text-align:center;
+
+}
+.mmenu div a { color:#808080; text-decoration:none; font-weight:bold;}
+.mmenu div a:hover, .mmenu div.act a { color:#FFF;}
+.mmenu div.act a[href *= 'team'] { color:#1A1A1A;}
+.mmenu div.act a[href *= 'news'] { color:#1A1A1A;}
+.mmenu div.act a[href *= 'contact'] { color:#1A1A1A;}
+
+.act { 
+	color:#FFF;
+}
+
+#mwind {
+	width:100%;
+	height:515px;
+	background-color:#FF4343;
+}
+
+#bigimg {
+	float:left;
+	width:45%; 
+	height:500px;
+}
+
+#bigimg img {
+	float:left;
+	position:relative;
+	left:30%;
+	top:100px;
+}
+
+#bigtxt {
+	float:left;
+	width:55%; 
+	height:530px;
+}
+
+#bigtxt span {
+	float:left;
+	position:relative;
+	left:0px;
+	top:80px;
+	color:#191919;
+}
+
+#headtxtx {
+	text-align:center;
+	font-size:60px;
+}
+
+#one {
+	font-size:24px;
+	font-weight:bold;
+}
+
+#txt {
+	font-size:18px;
+	font-weight:bold;
+	line-height:18px;
+}
+
+
+
+/*FOR PORTFOLIO PAGE*/
+.conteiner {
+	width:980px;
+	height:400px;
+	margin:0 auto;
+}
+
+#top_border {
+	position:relative;
+	width:980px;
+	height:40px;
+	margin:0px;
+	/*text-transform:uppercase;*/
+	font-weight:bold;
+	padding: 0px;
+}
+
+/*for page portfolio, services*/
+span#st_div {
+	float:left;
+	width:300px;
+}
+#st_div p {
+	color:#9e9381;
+	font-style:italic;
+	font-weight:bold;
+}
+#st_div img {
+	width:280px;
+}
+
+/*for page team*/
+span#st_div_team {
+	float:left;
+	width:300px;
+}
+#st_div_team p {
+	color:#9e9381;
+	font-weight:bold;
+}
+
+/*for page news*/
+span#st_div_news {
+	float:left;
+	width:300px;
+	height:200px;
+	padding:0px;
+	margin:20px 10px 0px 10px;
+}
+#st_div_news div#left_img {
+	width:50px;
+	height:198px;
+
+}
+#st_div_news div#left_img img {
+	padding:0px;
+	margin:0px;
+}
+#st_div_news div#right_txt {
+	float:left;
+	width:246px;
+	height:198px;
+}
+#st_div_news p {
+	color:#1a1a1a;
+	font-size:.9em;
+	font-weight:bold;
+	margin:10px 20px 20px 10px;
+}
+#st_div_news p strong {
+	font-size:1.2em;
+}
+p#news_date {
+	color:#9e9381;
+	background-image:url(images/news_arr.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+/*for contact page*/
+div#top_border_cont {
+	width:980px;
+	height:50px;
+	margin:0 auto;
+}
+div#top_border_cont p {
+	color:#1a1a1a;
+	font-size:1em;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-weight:bold;
+	padding:10px;
+}
+div.form {
+	width:980px;
+	height:400px;
+	margin:0 auto;
+}
+div.left_field {
+	float:left;
+	width:398px;
+	height:398px;
+}
+div.right_field {
+	float:left;
+	width:570px;
+	height:398px;
+}
+.form p {
+	font-size:1.2em;
+	font-weight:bold;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	margin:10px;
+	padding:0px;
+}
+#name_f, #email_f, #phone_f {
+	width:500px;
+	height:30px;
+	font-size:.7em;
+	padding:5px 0px 5px 10px;
+}
+#message_f {
+	width:500px;
+	height:60px;
+	padding:5px 0px 5px 10px;
+	font-size:.7em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#button_f {
+	padding:10px 50px 10px 50px;
+	font-weight:bold;
+}
+.left_field div#left_im {
+	float:left;
+	width:50px;
+	height:90px;
+}
+.left_field div#left_im img {
+	width:20px;
+}
+div#left_im{
+	padding:10px 0px 0px 10px;
+}
+.left_field div#left_koo {
+	float:left;
+	width:330px;
+	height:100px;
+}
+.left_field div#left_koo p {
+	font-size:.85em;
+	font-weight:500;
+}
+img#logos_img {
+	float:right;
+	width:600px;
+	margin:0px;
+	padding:0px;
+}
+div#bottom_border_cont {
+	width:980px;
+	height:50px;
+	margin:0 auto;
+}
+#bottom_border_cont img {
+	padding:0px;
+	margin:0px 0px 0px 50px;
+	float:left;
+}
+#bottom_border_cont p {
+	color:#1a1a1a;
+	font-size:1em;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-weight:bold;
+	padding:10px;
+	margin:0px 0px 0px 10px;
+	float:left;
+}
+#footer_cont {
+	width:980px;
+	height:50px;
+	margin:0 auto;
+}
+#footer_cont img {
+	float:left;
+	padding:0px;
+	margin:0px 0px 0px 50px;
+	height:45px;
+}
+#footer_cont p {
+	color:#9e9381;
+	font-size:.6em;
+	font-family:Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	padding:15px 0px 0px 0px;
+	margin:0px 0px 0px 10px;
+	float:left;
+	width:850px;
+	height:35px;
+}
+
+/***************************************************/
+
+#arrow_black {
+	background-image:url(images/arrow_black.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-right:800px;
+}
+
+span.toptext {
+	width:280px;
+	height:50px;
+	font-family: Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-size:1.6em;
+	padding:20px;
+	color:#ddd6c0;
+}
+
+span.bottext {
+	width:260px;
+	height:150px;
+	padding:0px;
+	font-family: Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-size:1em;
+	color:#fff;
+	margin:20px 10px 0px 15px;
+}
+
+span.nametext {
+	width:280px;
+	height:20px;
+	padding:0px;
+	font-family: Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-weight:bold;
+	font-size:1.2em;
+	color:#1a1a1a;
+	margin:0px 0px 0px 15px;
+}
+
+span.nametext p {
+	width:280px;
+	height:20px;
+	color:#9e9381;
+	font-family: Maiandra GD, Century, Georgia, Cambria, Tahoma;
+	font-size:1em;
+	font-style:normal;
+	margin:0px 0px 0px 15px;
+}
+
+
+/*********************************/
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse_portfolio { background: url(images/hori_lar_portfolio.png) no-repeat; }
+a.browse_service   { background: url(images/hori_lar_services.png) no-repeat;  }
+a.browse_team      { background: url(images/hori_lar_team.png) no-repeat;      }
+a.browse_news      { background: url(images/hori_lar_news.png) no-repeat;      }
+
+a.left, a.right {
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+}
+
+span#buttons a {
+	position:relative;
+	width:30px;
+	height:30px;
+	padding:0px;
+	margin:0px;
+	top:0px;
+	left:900px;
+}
+
+/* right */
+a.right 	{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 	{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left			{ margin-left: 0px; } 
+a.left:hover  	{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+
+/* disabled navigational button ≈—À» ”ƒ¿À»“‹, “Œ  ÕŒœ » œ–Œ –”“ » ¡”ƒ≈“ ¬—≈√ƒ¿ ¬»ƒÕŒ*/
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 980px;               /*¬Õ≈ÿÕ»… œ–ﬂÃŒ”√ŒÀ‹Õ» */
+	height:270px;               /*¬Õ≈ÿÕ»… œ–ﬂÃŒ”√ŒÀ‹Õ» */
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:980px;                /* ÿ»–»Õ¿ 1  ¿–“»Õ » — Œ“—“”œ¿Ã» */
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+/*	width:297px;
+	height:178px;
+*/}

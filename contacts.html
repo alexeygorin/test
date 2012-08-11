@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<script src="scripts/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools.js"></script>
+	<script type="text/javascript">
+		Element.implement({
+			clearFocusResetBlur:function (attr) {
+				var valueString = this.get(attr);
+				this.addEvents({
+					'focus':function () {
+						if (this.get('value') == valueString) this.set('value', '');
+					},
+					'blur':function () {
+						if (this.get('value') == "") this.set('value', valueString);
+					}
+				});
+			}
+		});
+	</script>
+	</head>
+
+	<body>
+<div id="wrapper">
+        <header id="header">
+        <div class="header_content">
+                <h1>aquaweb</h1>
+                <ul>
+                <li class="button_one" style="background-image: url(img/button_1.png);">
+                        <a  href="portfolio.html">Portfolio</a>
+                    </li>
+                <li class="button_two"  style="background-image: url(img/button_2.png);">
+                        <a  href="services.html">Service</a>
+                    </li>
+                <li class="button_tree" style="background-image: url(img/button_3.png);">
+                        <a  href="team.html">Team</a>
+                    </li>
+                <li class="button_four" style="background-image: url(img/button_4.png);">
+                        <a  href="news.html">News</a>
+                    </li>
+                <li  class="active button_five" style="background-image: url(img/button_5.png);">
+                        <a  href="contacts.html">Contact</a>
+                    </li>
+            </ul>
+                <div class="logo">
+                <a href="#">Deutsch</a>
+            </div>
+                <!-- .logo-->
+            </div>
+        <!-- .header_content-->
+    </header>
+        <!-- #header-->
+        <section id="middle_contacts">
+        <div id="container">
+                <div id="content">
+                <h3>info@aquaweb.com</h3>
+                <form class="contact-form" action="" method="post">
+                        <div class="row">
+                        <input id="name-input"  type="text" value="Your name" />
+                    </div>
+                        <div class="row">
+                        <input id="email-input" type="text" value="Your email" />
+                    </div>
+                        <div class="row">
+                        <input id="phone-number" type="text" value="Your phone number (optional)" />
+                    </div>
+                        <div class="row">
+                        <textarea id="comment-input" name="" cols="30" rows="">Your message</textarea>
+                    </div>
+                        <input class="submit" value="SEND" name="" type="submit" />
+                    </form>
+            </div>
+                <script type="text/javascript">
+					$('name-input').clearFocusResetBlur('value');
+					$('phone-number').clearFocusResetBlur('value');
+					$('email-input').clearFocusResetBlur('value');
+					$('comment-input').clearFocusResetBlur('value');
+				</script>
+                <!-- #content-->
+                <aside id="sideLeft">
+                <div class="contact">
+                        <a href="#"><strong>Contact</strong></a>
+                    </div>
+                <!-- #contact-->
+                <h3>Aquaweb Ukraine</h3>
+                <ul>
+                        <li class="telefon-icone">
+                        <p>+38 (0) 532 613 291 <br />
+                            +38 050 560 51 32</p>
+                    </li>
+                        <li class="maps-icone">
+                        <p>Marshala Biryuzova str. 51B<br />
+                            56047 Poltava<br />
+                            Ukraine</p>
+                    </li>
+                    </ul>
+                <h3>Aquaweb Germany</h3>
+                <ul>
+                        <li class="telefon-icone">
+                        <p>+49 1573 6644704</p>
+                    </li>
+                        <li class="maps-icone">
+                        <p>Kaiserstr. 42 <br />
+                            55116 Mainz<br />
+                            Germany</p>
+                    </li>
+                    </ul>
+            </aside>
+                <!-- #sideLeft -->
+                <div class="clear">
+            </div>
+                <div class="container-footer">
+                <div class="contact">
+                        <a href="#"><strong> Contact</strong></a>
+                    </div>
+                <!-- .contact -->
+                <div class="icon">
+                        <img alt="" src="img/icon.png" width="654" height="37">
+                    </div>
+                <!-- .icon -->
+            </div>
+                <!-- .container-footer -->
+            </div>
+        <!-- #container-->
+    </section>
+        <!-- #middle-->
+        
+        <footer id="footer">
+        <div class="footer-content">
+                <p>COPYWRIGHT © 2006 - 2012. Aquaweb | Imprint</p>
+                <a href="#wrapper"><img src="img/arrow_button.png" width="105" height="127"></a>
+            </div>
+        <!-- .footer-content -->
+    </footer>
+        <!-- #footer -->
+        
+    </div>
+<!-- #wrapper -->
+
+</body>
+</html>
